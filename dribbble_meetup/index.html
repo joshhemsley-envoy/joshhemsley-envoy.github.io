@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Socal Dribbble Meetup - Oct. 23, 2014</title>
+		<meta name="description" content="Page Preloading Effect: Re-creating the effect seen on fontface.ninja" />
+		<meta name="keywords" content="page loading, effect, initial, logo, sliding, web design, css animation, transform" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,200italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/effect1.css" />
+		<script src="js/modernizr.custom.js"></script>
+
+		<style>
+			a.btn_rsvp {
+				display:inline-block;
+				background: #fff;
+				padding:14px 80px;
+				border-radius:100px;
+				font-size: 20px;
+				font-weight: 400;
+				color:#f7609a;
+				text-decoration: none;
+			}
+			a.btn_rsvp:hover {
+				position:relative;
+				color:#000;
+				opacity: 0.9;
+				-webkit-transition: all 0.2s ease-in-out;
+				-moz-transition: all 0.2s ease-in-out;
+				-o-transition: all 0.2s ease-in-out;
+				transition: all 0.2s ease-in-out;
+			}
+			p.css-typing
+			{
+			    width: 100%;
+			    display:block;
+			    text-align: center;
+			    overflow:hidden;
+			    font-size: 35px;
+			    font-weight:300;
+			    margin-top:50px;
+			    position:relative;
+			    border-top:1px dashed #fff;
+			    border-bottom:1px dashed #fff;
+			    padding:50px 50px;
+			}
+			ul.details {
+				margin:0px;
+				padding:0px;
+			}
+			ul.details li {
+				list-style: block;
+				float:left;
+				text-align: center;
+				list-style: none;
+				width:33%;
+				border-right:1px dashed rgba(255,255,255,0);
+				min-height: 200px;
+				font-weight: 200;
+				font-size:16px;
+			}
+			ul.details li:last-child {
+				border-right:0px;
+			}
+			h2.date {
+				color:#fff;
+				font-weight: 200;
+				font-size: 42px;
+			}
+			h2.date span{
+				display: block;
+				font-size: 20px;
+				padding-top: 10px;
+				color:#fff;
+			}
+			.map_bg {
+				background:#2d3537 url(img/map_bg.png) top center no-repeat;
+				height:1100px;
+				padding-top:500px;
+				box-shadow: 0px -1px 40px rgba(0,0,0,0.3);
+				opacity: 0.93;
+			}
+		</style>
+	</head>
+	<body class="demo-1">
+		<div id="ip-container" class="ip-container">
+			<!-- initial header -->
+			<header class="ip-header" style="text-align:center;">
+				<h1 class="ip-logo">
+						<title id="logo_title">Delightful Demonstrations by Codrops</title>
+						<img src="img/logo_dribbble_socal.png">
+				</h1>
+				<div class="ip-loader">
+					<svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+						<path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+						<path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+					</svg>
+				</div>
+			</header>
+			<!-- top bar -->
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/FullscreenForm/"><span>Presented by ENVOY</span></a>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://dribbble.com"><span>Dribbble</span></a>
+
+			</span>
+			</div>
+			<!-- main content -->
+			<div class="ip-main">
+				<nav class="codrops-demos">
+					<a class="btn_rsvp" href="index.html">RSVP Now!</a>
+				</nav>
+
+				<p class="css-typing">Join us for an evening of drinks, burgers, giveaways, conversations, and one epic game of Knockout.</p>
+				<h2 class="date">
+					October 23, 2014
+					<span>6pm-8pm</span>
+				</h2>
+<!-- 				<ul class="details">
+					<li>
+						<p>Join us for an evening of drinks, burgers, conversations, giveaways and one epic game of Knockout.
+					</li>
+					<li>
+						<span>6pm-8pm</span>
+						<h4>THURS, 10.23</h4>
+						<span>34 Tesla, Irvine, CA 92618</span>
+					</li>
+					<li>
+						<span>6pm-8pm</span>
+						<h4>THURS, 10.23</h4>
+						<span>34 Tesla, Irvine, CA 92618</span>
+					</li>
+				</ul> -->
+
+			</div>
+		</div>
+
+
+		<div id="ip-container" class="ip-container map_bg">
+			<div class="ip-main">
+
+				<p class="css-typing">Hosted bt ENVOY</p>
+
+
+				<nav class="codrops-demos">
+					<a class="btn_rsvp" href="index.html">RSVP Now!</a>
+				</nav>
+			</div>
+
+
+		</div> 
+
+
+
+		<script src="js/classie.js"></script>
+		<script src="js/pathLoader.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
