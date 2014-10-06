@@ -239,7 +239,7 @@ body #cdawrap:hover #cda-remove {
 	width: 100%;
 	height: 100%;
 	background: #4b5a5f;
-	background: #4b5a5f url(../img/gray_bg.png) no-repeat center center fixed; 
+	background: #4b5a5f url(../img/gray_bg.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -780,7 +780,7 @@ a.icon_envoy, a.icon_dribbble {
     	opacity: 0;
     }
 	.ip-header {
-	background-size: 1200px auto;
+		background-position: center 0px;
 	}
 
 	.ip-logo img {
@@ -796,10 +796,23 @@ a.icon_envoy, a.icon_dribbble {
 		padding-top:300px;
 		opacity:1;
 	}
+	p.intro_copy
+	{
+	    font-size: 30px;
+	    padding:50px 20px;
+	}
+
+	a.btn_rsvp {
+		width:80%;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 
 	a.btn_map {
 		width:80%;
 		margin: 10px 0px;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 	a.btn_map:hover {
 		width:80%;
