@@ -2,9 +2,11 @@
 	<head>
 		<title>ENVOY CASE STUDY SAMPLES</title>
 
-
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 		<style>
+
+
 
 			body#landing-body #landing-chrome {
 			position: fixed;
@@ -48,8 +50,27 @@
 			section.vizio{
 				background-image: url("images/vizio_cast_study.jpg"); 
 				height:12385px;
-
 	  		}
+			section.guide{
+				background-image: url("images/vizio_cast_study_guides.jpg"); 
+				height:12385px;
+	  		}
+	  		.guide_btn {
+	  			background:red;
+	  			display: block;
+	  			position: fixed;
+	  			bottom:25px;
+	  			left:25px;
+	  			z-index:10;
+	  			color:#fff;
+	  			font-size:11px;
+	  			padding:8px 15px;
+	  		}
+	  		.guide_btn:hover {
+	  			background:#cd2928;
+	  			cursor:pointer;
+	  		}
+
 
 		</style>
 	</head>
@@ -61,9 +82,15 @@
 		<section class="case vizio">
 			&nbsp;
 		</section>
-
+		<span class="guide_btn">SHOW/HIDE GUIDES</span>
 
 
 	</body>
+
+	<script>
+	$(".guide_btn").click(function(){
+  	$( "section.vizio" ).toggleClass( "guide" );
+	});
+	</script>
 
 </html>
