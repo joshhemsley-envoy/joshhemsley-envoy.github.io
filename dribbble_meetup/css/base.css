@@ -586,6 +586,16 @@ p.intro_copy
     border-bottom:1px dashed #fff;
     padding:50px 50px;
 }
+p.intro_copy a {
+	color:#fff;
+	text-decoration: underline;
+}
+p.intro_copy a:hover {
+	color:#fff;
+	text-decoration: underline;
+}
+
+
 ul.details {
 	margin:0px;
 	padding:0px;
@@ -659,6 +669,7 @@ a.btn_map {
 	font-weight: 400;
 	color:#f7609a;
 	text-decoration: none;
+	margin:0px 4px;
 }
 
 a.btn_map:hover {
@@ -671,6 +682,9 @@ a.btn_map:hover {
 	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 	margin:0px auto;
+	margin:0px 4px;
+
+
 }
 a.icon_envoy, a.icon_dribbble {
 	height:48px;
