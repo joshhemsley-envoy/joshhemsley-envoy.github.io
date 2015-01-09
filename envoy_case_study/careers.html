@@ -16,18 +16,19 @@
 				background-image: url("images/careers_job_overlay.jpg"); 
 				height:49005px;
 	  		}
+
 		</style>
 	</head>
 
 	<body id="landing-body">
 
 		<div id="landing-chrome"></div>
-
+		<div class="work_panel">&nbsp;</div>
 		<section class="sample contact">
 			&nbsp;
 		</section>
-		<span class="guide_btn">SHOW/HIDE JOB DESCRIPTION</span>	
-
+		<span class="guide_btn">SHOW/HIDE JOB DESCRIPTION</span>
+		<a href="#" class="work_btn">WORK</a>
 		<a href="menu.html" class="menu_btn">MENU</a>
  		<div class="right_buttons">
 			<a href="careers.html" class="link_btn">CAREERS</a>
@@ -45,6 +46,19 @@
 	});
 
 
+	$(".work_btn").click(function(){
+    	$(".work_panel").slideToggle('fast');
+    	$(this).toggleClass("top");
+    	$('#landing-body').toggleClass("work");
+	});
+
+
+
 	</script>
 
 </html>
+
+
+
+
+

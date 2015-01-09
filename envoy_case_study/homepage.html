@@ -22,12 +22,14 @@
 	<body id="landing-body">
 
 		<div id="landing-chrome"></div>
+		<div class="work_panel">&nbsp;</div>
 
 		<section class="sample homepage">
 			&nbsp;
 		</section>
 <!-- 		<span class="guide_btn">SHOW/HIDE GUIDES</span>
  -->		
+		<a href="#" class="work_btn">WORK</a>
 
 		<a href="menu.html" class="menu_btn">MENU</a>
  		<div class="right_buttons">
@@ -43,6 +45,13 @@
 	$(".guide_btn").click(function(){
   	$( "section.sample" ).toggleClass( "guide" );
 	});
+
+	$(".work_btn").click(function(){
+    	$(".work_panel").slideToggle('fast');
+    	$(this).toggleClass("top");
+    	$('#landing-body').toggleClass("work");
+	});
+
 
 	</script>
 
