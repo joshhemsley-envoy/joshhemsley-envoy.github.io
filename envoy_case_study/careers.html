@@ -13,8 +13,8 @@
 				height:4900px;
 	  		}
 			section.guide{
-				background-image: url("images/vizio_cast_study_guides.jpg"); 
-				height:12385px;
+				background-image: url("images/careers_job_overlay.jpg"); 
+				height:49005px;
 	  		}
 		</style>
 	</head>
@@ -26,8 +26,7 @@
 		<section class="sample contact">
 			&nbsp;
 		</section>
-<!-- 		<span class="guide_btn">SHOW/HIDE GUIDES</span>
- -->	
+		<span class="guide_btn">SHOW/HIDE JOB DESCRIPTION</span>	
 
 		<a href="menu.html" class="menu_btn">MENU</a>
  		<div class="right_buttons">
@@ -41,8 +40,10 @@
 
 	<script>
 	$(".guide_btn").click(function(){
-  	$( "section.sample" ).toggleClass( "guide" );
+	  	$( "section.sample" ).toggleClass( "guide" );
+		$("html, body").animate({scrollTop: 0}, 500);
 	});
+
 
 	</script>
 
